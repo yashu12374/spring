@@ -1,0 +1,26 @@
+package com.xworkz.springapp.component;
+
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
+@Component
+@Scope("prototype")
+public class Instructor {
+    private int instructorId;
+    private String instructorName;
+
+    public int getInstructorId() { return instructorId; }
+    public void setInstructorId(int instructorId) { this.instructorId = instructorId; }
+
+    public String getInstructorName() { return instructorName; }
+    public void setInstructorName(String instructorName) { this.instructorName = instructorName; }
+
+    @Override
+    public String toString() {
+        return "Instructor{" +
+                "instructorId=" + instructorId +
+                ", instructorName='" + instructorName + '\'' +
+                '}';
+    }
+}
+
